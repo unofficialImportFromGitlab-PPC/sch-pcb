@@ -1,0 +1,203 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 12V_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 1V2_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 1V8_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 2V5_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 3V3_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 5V_SB
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 5V_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP 74AHC1G14
+D Single Schmitt NOT Gate, Low-Voltage CMOS
+K Single Gate NOT Schmitt LVC CMOS
+F https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf
+$ENDCMP
+#
+$CMP 74AHCT1G14
+D Single Schmitt NOT Gate, Low-Voltage CMOS
+K Single Gate NOT Schmitt LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUC1G14
+D Single Schmitt NOT Gate, Low-Voltage CMOS
+K Single Gate NOT Schmitt LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74AUP1G14
+D Single Schmitt NOT Gate, Low-Voltage CMOS
+K Single Gate NOT Schmitt LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP AVDDH
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVDDL
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVDDL_PLL
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVdd_CGA1
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVdd_CGA2
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVdd_D1
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVdd_PLAT
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVdd_SD1_PLL1
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP AVdd_SD1_PLL2
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP Bus_M.2_Socket_M
+D M.2 Socket 3 Mechanical Key M
+K M2 NGNF PCI-E
+F http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf#page=155
+$ENDCMP
+#
+$CMP DDR_VDDQ
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP DDR_VDDQ_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP DDR_VPP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP DDR_VTT
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP DDR_VTT_REF
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP DVDDH
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP DVDDL
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP EVdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP GVdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP MVREF
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP S1Vdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP USB_HVdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP USB_OVdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP USB_SVdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP VCORE
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP VCORE_SLP
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP VTT
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+$CMP X1Vdd
+D Power symbol creates a global label with name "AVDDL"
+K power-flag
+$ENDCMP
+#
+#End Doc Library

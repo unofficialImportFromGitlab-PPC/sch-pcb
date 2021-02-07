@@ -1,0 +1,557 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 21 28
+Title "DJANGO"
+Date "2020-12-06"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ppc_scm:COP_HEADER U?
+U 1 1 5FF03ACD
+P 5900 3750
+F 0 "U?" H 6625 3915 50  0000 C CNN
+F 1 "SN74AUC08" H 6625 3824 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 5900 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 1 1 5FF05582
+P 2300 1250
+F 0 "U?" H 2300 1575 50  0000 C CNN
+F 1 "SN74AUC08" H 2300 1484 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 2300 1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 2 1 5FF07235
+P 2300 2150
+F 0 "U?" H 2300 2475 50  0000 C CNN
+F 1 "SN74AUC08" H 2300 2384 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 2300 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2300 2150 50  0001 C CNN
+	2    2300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 3 1 5FF087CC
+P 2300 3050
+F 0 "U?" H 2300 3375 50  0000 C CNN
+F 1 "SN74AUC08" H 2300 3284 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 2300 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2300 3050 50  0001 C CNN
+	3    2300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 5 1 5FF09BC5
+P 5000 1400
+F 0 "U?" H 5230 1446 50  0000 L CNN
+F 1 "SN74AUC08" H 5230 1355 50  0000 L CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 5000 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5000 1400 50  0001 C CNN
+	5    5000 1400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4400 4250 0    50   Output ~ 0
+JTAG_TMS
+Wire Wire Line
+	5900 4250 4400 4250
+Text HLabel 8450 4150 2    50   Output ~ 0
+CHKSTP_IN_B
+Wire Wire Line
+	8450 4150 7350 4150
+Text HLabel 4400 3850 0    50   Input ~ 0
+JTAG_TDO
+Text HLabel 4400 3950 0    50   Output ~ 0
+JTAG_TDI
+Wire Wire Line
+	5900 3950 4400 3950
+Text HLabel 4400 4150 0    50   Output ~ 0
+JTAG_TCK
+Wire Wire Line
+	7350 4350 7500 4350
+Wire Wire Line
+	7500 4350 7500 4550
+Wire Wire Line
+	7350 4550 7500 4550
+Connection ~ 7500 4550
+Wire Wire Line
+	7500 4550 7500 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5FF0F919
+P 7500 4800
+F 0 "#PWR?" H 7500 4550 50  0001 C CNN
+F 1 "GND" H 7505 4627 50  0000 C CNN
+F 2 "" H 7500 4800 50  0001 C CNN
+F 3 "" H 7500 4800 50  0001 C CNN
+	1    7500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF0FE84
+P 4850 3400
+F 0 "R?" H 4920 3446 50  0000 L CNN
+F 1 "10k" H 4920 3355 50  0000 L CNN
+F 2 "" V 4780 3400 50  0001 C CNN
+F 3 "~" H 4850 3400 50  0001 C CNN
+	1    4850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1078A
+P 5150 3400
+F 0 "R?" H 5220 3446 50  0000 L CNN
+F 1 "10k" H 5220 3355 50  0000 L CNN
+F 2 "" V 5080 3400 50  0001 C CNN
+F 3 "~" H 5150 3400 50  0001 C CNN
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF1BC8A
+P 4850 3250
+F 0 "#PWR?" H 4850 3100 50  0001 C CNN
+F 1 "+1V8" H 4865 3423 50  0000 C CNN
+F 2 "" H 4850 3250 50  0001 C CNN
+F 3 "" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1D7F0
+P 5450 3400
+F 0 "R?" H 5520 3446 50  0000 L CNN
+F 1 "10k" H 5520 3355 50  0000 L CNN
+F 2 "" V 5380 3400 50  0001 C CNN
+F 3 "~" H 5450 3400 50  0001 C CNN
+	1    5450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1DC77
+P 5750 3400
+F 0 "R?" H 5820 3446 50  0000 L CNN
+F 1 "10k" H 5820 3355 50  0000 L CNN
+F 2 "" V 5680 3400 50  0001 C CNN
+F 3 "~" H 5750 3400 50  0001 C CNN
+	1    5750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1DF2D
+P 7600 3500
+F 0 "R?" H 7670 3546 50  0000 L CNN
+F 1 "10k" H 7670 3455 50  0000 L CNN
+F 2 "" V 7530 3500 50  0001 C CNN
+F 3 "~" H 7600 3500 50  0001 C CNN
+	1    7600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3850 5900 3850
+Wire Wire Line
+	4850 3550 4850 4150
+Wire Wire Line
+	5900 4550 5750 4550
+Wire Wire Line
+	5150 3550 5150 4350
+Wire Wire Line
+	5450 3550 5450 4450
+Wire Wire Line
+	5750 3550 5750 4550
+Wire Wire Line
+	5750 3250 5450 3250
+Connection ~ 4850 3250
+Connection ~ 5150 3250
+Wire Wire Line
+	5150 3250 4850 3250
+Connection ~ 5450 3250
+Wire Wire Line
+	5450 3250 5150 3250
+Wire Wire Line
+	7350 3950 7600 3950
+Wire Wire Line
+	7600 3650 7600 3950
+Connection ~ 7600 3950
+Wire Wire Line
+	7600 3950 8450 3950
+$Comp
+L Device:R R?
+U 1 1 5FF24578
+P 7900 3500
+F 0 "R?" H 7970 3546 50  0000 L CNN
+F 1 "10" H 7970 3455 50  0000 L CNN
+F 2 "" V 7830 3500 50  0001 C CNN
+F 3 "~" H 7900 3500 50  0001 C CNN
+	1    7900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4050 7900 4050
+Wire Wire Line
+	7900 4050 7900 3650
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5FF2912E
+P 1950 3650
+F 0 "SW?" H 1950 3935 50  0000 C CNN
+F 1 "SW_SPDT" H 1950 3844 50  0000 C CNN
+F 2 "" H 1950 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+	1    1950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1350 1150 1350
+Text HLabel 1150 1150 0    50   Input ~ 0
+PIC_HRESET_B
+$Comp
+L Device:R R?
+U 1 1 5FF2AA7E
+P 1850 950
+F 0 "R?" H 1920 996 50  0000 L CNN
+F 1 "10k" H 1920 905 50  0000 L CNN
+F 2 "" V 1780 950 50  0001 C CNN
+F 3 "~" H 1850 950 50  0001 C CNN
+	1    1850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF2B2CF
+P 1850 800
+F 0 "#PWR?" H 1850 650 50  0001 C CNN
+F 1 "+1V8" H 1865 973 50  0000 C CNN
+F 2 "" H 1850 800 50  0001 C CNN
+F 3 "" H 1850 800 50  0001 C CNN
+	1    1850 800 
+	1    0    0    -1  
+$EndComp
+Text Label 4400 4350 0    50   ~ 0
+COP_SRESET_B
+Connection ~ 5750 4550
+Wire Wire Line
+	4400 4150 4850 4150
+Wire Wire Line
+	4400 4350 5150 4350
+Wire Wire Line
+	4400 4450 5450 4450
+Wire Wire Line
+	4400 4550 5750 4550
+Text Label 1150 1350 0    50   ~ 0
+COP_SRESET_B
+$Comp
+L Device:R R?
+U 1 1 5FF315F0
+P 3250 950
+F 0 "R?" H 3320 996 50  0000 L CNN
+F 1 "1k" H 3320 905 50  0000 L CNN
+F 2 "" V 3180 950 50  0001 C CNN
+F 3 "~" H 3250 950 50  0001 C CNN
+	1    3250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF315F6
+P 3250 800
+F 0 "#PWR?" H 3250 650 50  0001 C CNN
+F 1 "+1V8" H 3265 973 50  0000 C CNN
+F 2 "" H 3250 800 50  0001 C CNN
+F 3 "" H 3250 800 50  0001 C CNN
+	1    3250 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1100 1850 1150
+Wire Wire Line
+	3250 1100 3250 1250
+Connection ~ 3250 1250
+Wire Wire Line
+	3250 1250 3500 1250
+Text HLabel 3500 1250 2    50   Output ~ 0
+CPU_HRESET_B
+Text HLabel 1150 2050 0    50   Input ~ 0
+PIC_PORESET_B
+$Comp
+L Device:R R?
+U 1 1 5FF3D761
+P 1850 1850
+F 0 "R?" H 1920 1896 50  0000 L CNN
+F 1 "10k" H 1920 1805 50  0000 L CNN
+F 2 "" V 1780 1850 50  0001 C CNN
+F 3 "~" H 1850 1850 50  0001 C CNN
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2000 1850 2050
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF3FD8E
+P 1850 1700
+F 0 "#PWR?" H 1850 1550 50  0001 C CNN
+F 1 "+1V8" H 1865 1873 50  0000 C CNN
+F 2 "" H 1850 1700 50  0001 C CNN
+F 3 "" H 1850 1700 50  0001 C CNN
+	1    1850 1700
+	1    0    0    -1  
+$EndComp
+Text HLabel 2900 2150 2    50   Output ~ 0
+CPU_PORESET_B
+Wire Wire Line
+	2600 2150 2900 2150
+Wire Wire Line
+	2000 2250 1150 2250
+Text Label 4400 4450 0    50   ~ 0
+COP_HRESET_B
+Text Label 1150 2250 0    50   ~ 0
+COP_HRESET_B
+Text HLabel 2900 3050 2    50   Output ~ 0
+JTAG_TRST_B
+Wire Wire Line
+	2600 3050 2900 3050
+$Comp
+L Device:R R?
+U 1 1 5FF4BF3F
+P 1850 2750
+F 0 "R?" H 1920 2796 50  0000 L CNN
+F 1 "10k" H 1920 2705 50  0000 L CNN
+F 2 "" V 1780 2750 50  0001 C CNN
+F 3 "~" H 1850 2750 50  0001 C CNN
+	1    1850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF4BF45
+P 1850 2600
+F 0 "#PWR?" H 1850 2450 50  0001 C CNN
+F 1 "+1V8" H 1865 2773 50  0000 C CNN
+F 2 "" H 1850 2600 50  0001 C CNN
+F 3 "" H 1850 2600 50  0001 C CNN
+	1    1850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF51F0B
+P 2600 3550
+F 0 "R?" V 2400 3500 50  0000 L CNN
+F 1 "10k" V 2500 3500 50  0000 L CNN
+F 2 "" V 2530 3550 50  0001 C CNN
+F 3 "~" H 2600 3550 50  0001 C CNN
+	1    2600 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF51F11
+P 2750 3550
+F 0 "#PWR?" H 2750 3400 50  0001 C CNN
+F 1 "+1V8" H 2765 3723 50  0000 C CNN
+F 2 "" H 2750 3550 50  0001 C CNN
+F 3 "" H 2750 3550 50  0001 C CNN
+	1    2750 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3550 2150 3550
+Connection ~ 1850 2050
+Wire Wire Line
+	1850 2050 2000 2050
+Wire Wire Line
+	1150 2050 1850 2050
+Text Label 1200 2050 0    50   ~ 0
+PIC_PORESET_B
+Text Label 2800 3750 2    50   ~ 0
+PIC_PORESET_B
+Wire Wire Line
+	2150 3750 2800 3750
+Wire Wire Line
+	1750 3650 1550 3650
+Wire Wire Line
+	1550 3650 1550 3150
+Wire Wire Line
+	1550 3150 2000 3150
+Text Label 8450 3950 2    50   ~ 0
+COP_TRST_B
+Text Label 1150 2950 0    50   ~ 0
+COP_TRST_B
+Wire Wire Line
+	1150 2950 1850 2950
+Wire Wire Line
+	1850 2900 1850 2950
+Connection ~ 1850 2950
+Wire Wire Line
+	1850 2950 2000 2950
+Connection ~ 1850 1150
+Wire Wire Line
+	1850 1150 2000 1150
+Wire Wire Line
+	1150 1150 1850 1150
+Connection ~ 4850 4150
+Connection ~ 5150 4350
+Connection ~ 5450 4450
+Wire Wire Line
+	5150 4350 5900 4350
+Wire Wire Line
+	5450 4450 5900 4450
+Wire Wire Line
+	4850 4150 5900 4150
+Text HLabel 4400 4550 0    50   Output ~ 0
+CKSTP_OUT_B
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF70405
+P 5000 900
+F 0 "#PWR?" H 5000 750 50  0001 C CNN
+F 1 "+1V8" H 5015 1073 50  0000 C CNN
+F 2 "" H 5000 900 50  0001 C CNN
+F 3 "" H 5000 900 50  0001 C CNN
+	1    5000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF71503
+P 5000 1900
+F 0 "#PWR?" H 5000 1650 50  0001 C CNN
+F 1 "GND" H 5005 1727 50  0000 C CNN
+F 2 "" H 5000 1900 50  0001 C CNN
+F 3 "" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF72BDD
+P 4500 1400
+F 0 "C?" H 4615 1446 50  0000 L CNN
+F 1 "0.1u" H 4615 1355 50  0000 L CNN
+F 2 "" H 4538 1250 50  0001 C CNN
+F 3 "~" H 4500 1400 50  0001 C CNN
+	1    4500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1900 5000 1900
+Connection ~ 5000 1900
+Wire Wire Line
+	4500 1550 4500 1900
+Wire Wire Line
+	4500 1250 4500 900 
+Wire Wire Line
+	4500 900  5000 900 
+Connection ~ 5000 900 
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FF7FCD5
+P 7900 3350
+F 0 "#PWR?" H 7900 3200 50  0001 C CNN
+F 1 "+1V8" H 7915 3523 50  0000 C CNN
+F 2 "" H 7900 3350 50  0001 C CNN
+F 3 "" H 7900 3350 50  0001 C CNN
+	1    7900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3350 7600 3350
+Connection ~ 7900 3350
+Text Notes 950  4300 0    50   ~ 0
+This switch is included as a precaution for BSDL testing. \nThe switch should be closed to position (3) during BSDL \ntesting to avoid accidentally asserting the TRST_B line.\nIf BSDL testing is not being performed, this switch\nshould be closed to position (1).
+$Comp
+L ppc_scm:SN74AUP1G07 U?
+U 1 1 5FFB64D1
+P 2700 1100
+F 0 "U?" H 2900 1300 50  0000 C CNN
+F 1 "SN74AUP1G07" H 2900 1200 50  0000 C CNN
+F 2 "ppc_scm:Texas_X2SON-4_1x1mm_P0.65mm_rev2" H 2700 1100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/sn74aup1g07" H 2700 1100 50  0001 C CNN
+	1    2700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ppc_scm:SN74AUP1G07 U?
+U 2 1 5FFB6E95
+P 5800 1150
+F 0 "U?" H 6227 896 50  0000 L CNN
+F 1 "SN74AUP1G07" H 6227 805 50  0000 L CNN
+F 2 "ppc_scm:Texas_X2SON-4_1x1mm_P0.65mm_rev2" H 5800 1150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/sn74aup1g07" H 5800 1150 50  0001 C CNN
+	2    5800 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1250 2600 1250
+Wire Wire Line
+	3050 1250 3250 1250
+$Comp
+L Device:C C?
+U 1 1 5FFD2F94
+P 6900 1450
+F 0 "C?" H 7015 1496 50  0000 L CNN
+F 1 "0.1u" H 7015 1405 50  0000 L CNN
+F 2 "" H 6938 1300 50  0001 C CNN
+F 3 "~" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1150 6900 1150
+Wire Wire Line
+	6900 1150 6900 1300
+Wire Wire Line
+	6100 1750 6900 1750
+Wire Wire Line
+	6900 1750 6900 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5FFD9502
+P 6100 1750
+F 0 "#PWR?" H 6100 1500 50  0001 C CNN
+F 1 "GND" H 6105 1577 50  0000 C CNN
+F 2 "" H 6100 1750 50  0001 C CNN
+F 3 "" H 6100 1750 50  0001 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FFDAB8B
+P 6100 1150
+F 0 "#PWR?" H 6100 1000 50  0001 C CNN
+F 1 "+1V8" H 6115 1323 50  0000 C CNN
+F 2 "" H 6100 1150 50  0001 C CNN
+F 3 "" H 6100 1150 50  0001 C CNN
+	1    6100 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 1750
+Connection ~ 6100 1150
+Text Notes 4500 5450 0    50   ~ 0
+TODO: verificare livelli tensione JTAG verso CPU
+$EndSCHEMATC

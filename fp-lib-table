@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ppc_scm)(type KiCad)(uri ${KIPRJMOD}/ppc_scm.pretty)(options "")(descr ""))
+)

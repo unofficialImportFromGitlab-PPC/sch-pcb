@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ppc_scm)(type Legacy)(uri ${KIPRJMOD}/ppc_scm.lib)(options "")(descr ""))
+  (lib (name ConnectorNew)(type Legacy)(uri /home/manuel/Progetti/VMS/PPCBoard/ConnectorNew.lib)(options "")(descr ""))
+)
