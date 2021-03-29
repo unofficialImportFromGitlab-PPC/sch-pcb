@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 19 28
+Sheet 18 28
 Title "DJANGO"
 Date "2020-12-06"
 Rev "1"
@@ -2544,7 +2544,7 @@ F 3 "~" H 4800 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4500 3550 5350 3550
+	4500 3550 5150 3550
 Wire Wire Line
 	4650 3650 4500 3650
 $Comp
@@ -2713,7 +2713,7 @@ F 3 "" H 3600 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3600 3750 4650 3750
+	3600 3750 3650 3750
 $Comp
 L ppc_scm:3V3_SLP #PWR?
 U 1 1 62AE6BA5
@@ -2762,4 +2762,29 @@ F 3 "" H 900 9500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 900  9500
+$Comp
+L Device:R R?
+U 1 1 60855813
+P 4800 3450
+F 0 "R?" V 4750 3250 50  0000 C CNN
+F 1 "4.7k" V 4750 3650 50  0000 C CNN
+F 2 "" V 4730 3450 50  0001 C CNN
+F 3 "~" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3450 5150 3450
+Wire Wire Line
+	5150 3450 5150 3550
+Connection ~ 5150 3550
+Wire Wire Line
+	5150 3550 5350 3550
+Wire Wire Line
+	4650 3450 3650 3450
+Wire Wire Line
+	3650 3450 3650 3750
+Connection ~ 3650 3750
+Wire Wire Line
+	3650 3750 4650 3750
 $EndSCHEMATC
