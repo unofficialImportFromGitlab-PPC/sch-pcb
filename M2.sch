@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 18 28
+Sheet 17 28
 Title "DJANGO"
 Date "2020-12-06"
 Rev "1"
@@ -48,34 +48,6 @@ Wire Bus Line
 	3650 950  4350 950 
 Wire Bus Line
 	3650 850  4350 850 
-Wire Wire Line
-	2450 2250 1950 2250
-Wire Wire Line
-	2450 2350 1950 2350
-Wire Wire Line
-	2450 2450 1950 2450
-Wire Wire Line
-	2450 2550 1950 2550
-Wire Wire Line
-	2450 2650 1950 2650
-Wire Wire Line
-	2450 2750 1950 2750
-Wire Wire Line
-	2450 2850 1950 2850
-Wire Wire Line
-	2450 3050 1950 3050
-Wire Wire Line
-	2450 3150 1950 3150
-Wire Wire Line
-	2450 3250 1950 3250
-Wire Wire Line
-	2450 3350 1950 3350
-Wire Wire Line
-	2450 3450 1950 3450
-Wire Wire Line
-	2450 3550 1950 3550
-Wire Wire Line
-	2450 3650 1950 3650
 Wire Wire Line
 	2450 3750 1950 3750
 Text Label 1950 2250 0    50   ~ 0
@@ -293,10 +265,6 @@ F 3 "" H 3450 1650 50  0001 C CNN
 	1    3450 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 2950 1950 2950
-Wire Wire Line
-	2450 1850 1950 1850
 Text HLabel 1950 1850 0    50   Input ~ 0
 M2_M_RST_N
 Wire Wire Line
@@ -305,8 +273,6 @@ Text HLabel 6950 1850 0    50   Input ~ 0
 M2_B_RST_N
 NoConn ~ 2450 4450
 NoConn ~ 4450 3950
-Wire Wire Line
-	2450 1950 1950 1950
 Text HLabel 1950 1950 0    50   Output ~ 0
 M2_M_CLKREQ_N
 Wire Wire Line
@@ -366,8 +332,6 @@ Wire Notes Line
 Wire Notes Line
 	6650 2350 6650 2200
 Wire Wire Line
-	2450 4950 1950 4950
-Wire Wire Line
 	2450 5050 1950 5050
 Text HLabel 1950 4950 0    50   Input ~ 0
 M2_M_REFCLKP
@@ -381,8 +345,6 @@ Text HLabel 6950 4950 0    50   Input ~ 0
 M2_B_REFCLKP
 Text HLabel 6950 5050 0    50   Input ~ 0
 M2_B_REFCLKN
-Wire Wire Line
-	4400 4650 4450 4650
 Text HLabel 4900 4650 2    50   Input ~ 0
 M2_M_SUBCLK
 Wire Wire Line
@@ -400,7 +362,6 @@ F 3 "" H 3450 5450 50  0001 C CNN
 	1    3450 5450
 	1    0    0    -1  
 $EndComp
-Connection ~ 4450 4650
 Wire Wire Line
 	4450 4650 4900 4650
 $Comp
@@ -455,4 +416,91 @@ Wire Wire Line
 	3200 6700 1950 6700
 Wire Wire Line
 	3200 6800 1950 6800
+$Comp
+L ppc_scm:3V3_SLP #PWR?
+U 1 1 608080F8
+P 2250 1300
+F 0 "#PWR?" H 2250 1150 50  0001 C CNN
+F 1 "3V3_SLP" H 2265 1473 50  0000 C CNN
+F 2 "" H 2250 1300 50  0001 C CNN
+F 3 "" H 2250 1300 50  0001 C CNN
+	1    2250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6080963A
+P 2250 1450
+F 0 "R?" H 2320 1496 50  0000 L CNN
+F 1 "4.7k" H 2320 1405 50  0000 L CNN
+F 2 "" V 2180 1450 50  0001 C CNN
+F 3 "~" H 2250 1450 50  0001 C CNN
+	1    2250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1600 2250 1850
+Connection ~ 2250 1850
+Wire Wire Line
+	2250 1850 1950 1850
+$Comp
+L ppc_scm:3V3_SLP #PWR?
+U 1 1 6080DE01
+P 7200 1300
+F 0 "#PWR?" H 7200 1150 50  0001 C CNN
+F 1 "3V3_SLP" H 7215 1473 50  0000 C CNN
+F 2 "" H 7200 1300 50  0001 C CNN
+F 3 "" H 7200 1300 50  0001 C CNN
+	1    7200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6080DE07
+P 7200 1450
+F 0 "R?" H 7270 1496 50  0000 L CNN
+F 1 "4.7k" H 7270 1405 50  0000 L CNN
+F 2 "" V 7130 1450 50  0001 C CNN
+F 3 "~" H 7200 1450 50  0001 C CNN
+	1    7200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1600 7200 1850
+Wire Wire Line
+	1950 2250 2450 2250
+Wire Wire Line
+	1950 2350 2450 2350
+Wire Wire Line
+	1950 2450 2450 2450
+Wire Wire Line
+	1950 2550 2450 2550
+Wire Wire Line
+	1950 2650 2450 2650
+Wire Wire Line
+	1950 2750 2450 2750
+Wire Wire Line
+	1950 2850 2450 2850
+Wire Wire Line
+	1950 3050 2450 3050
+Wire Wire Line
+	1950 3150 2450 3150
+Wire Wire Line
+	1950 3250 2450 3250
+Wire Wire Line
+	1950 3350 2450 3350
+Wire Wire Line
+	1950 3450 2450 3450
+Wire Wire Line
+	1950 3550 2450 3550
+Wire Wire Line
+	1950 3650 2450 3650
+Wire Wire Line
+	1950 2950 2450 2950
+Wire Wire Line
+	2250 1850 2450 1850
+Wire Wire Line
+	1950 1950 2450 1950
+Wire Wire Line
+	1950 4950 2450 4950
 $EndSCHEMATC
