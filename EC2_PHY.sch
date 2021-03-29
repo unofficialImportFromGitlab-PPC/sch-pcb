@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 28
+Sheet 14 28
 Title "DJANGO"
 Date "2020-12-06"
 Rev "1"
@@ -2012,64 +2012,20 @@ Wire Wire Line
 	1450 7700 2150 7700
 Text Label 3000 5050 0    50   ~ 0
 EC2PHY_INT_N
-Text Label 4450 1600 0    50   ~ 0
+Text Label 4250 1200 0    50   ~ 0
 EC2PHY_INT_N
-Text HLabel 5050 1600 2    50   Output ~ 0
+Text HLabel 4800 1200 2    50   Output ~ 0
 EC2PHY_INT_N
 Text Label 3000 5350 0    50   ~ 0
 EC2PHY_RST_N
-$Comp
-L Device:R R?
-U 1 1 602C75A3
-P 4050 1250
-AR Path="/5FC823B8/602C75A3" Ref="R?"  Part="1" 
-AR Path="/5FD29175/602C75A3" Ref="R?"  Part="1" 
-AR Path="/60A03338/602C75A3" Ref="R?"  Part="1" 
-F 0 "R?" H 3900 1200 50  0000 L CNN
-F 1 "10k" H 3850 1300 50  0000 L CNN
-F 2 "" V 3980 1250 50  0001 C CNN
-F 3 "~" H 4050 1250 50  0001 C CNN
-	1    4050 1250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 602C75A4
-P 4300 1250
-AR Path="/5FC823B8/602C75A4" Ref="R?"  Part="1" 
-AR Path="/5FD29175/602C75A4" Ref="R?"  Part="1" 
-AR Path="/60A03338/602C75A4" Ref="R?"  Part="1" 
-F 0 "R?" H 4150 1200 50  0000 L CNN
-F 1 "10k" H 4100 1300 50  0000 L CNN
-F 2 "" V 4230 1250 50  0001 C CNN
-F 3 "~" H 4300 1250 50  0001 C CNN
-	1    4300 1250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4300 1100 4050 1100
 Wire Wire Line
 	3000 5350 3600 5350
 Wire Wire Line
 	3000 5050 3600 5050
-Text Label 4450 1800 0    50   ~ 0
+Text Label 4400 1750 2    50   ~ 0
 EC2PHY_RST_N
-Text HLabel 5050 1800 2    50   Input ~ 0
+Text HLabel 3000 1750 0    50   Input ~ 0
 EC2PHY_RST_N
-Wire Wire Line
-	3950 1600 4050 1600
-Wire Wire Line
-	3950 1800 4300 1800
-Wire Wire Line
-	4050 1400 4050 1600
-Connection ~ 4050 1600
-Wire Wire Line
-	4050 1600 5050 1600
-Wire Wire Line
-	4300 1400 4300 1800
-Connection ~ 4300 1800
-Wire Wire Line
-	4300 1800 5050 1800
 Text Label 10600 2200 0    50   ~ 0
 AVDDL
 Text Label 10500 3000 0    50   ~ 0
@@ -2079,8 +2035,6 @@ DVDDL
 Text Label 8500 2200 0    50   ~ 0
 AVDDH
 Text Label 8500 2950 0    50   ~ 0
-DVDDH
-Text Label 4050 1100 0    50   ~ 0
 DVDDH
 Text Label 4100 2300 1    50   ~ 0
 DVDDH
@@ -2232,4 +2186,103 @@ Wire Wire Line
 Connection ~ 8600 800 
 Wire Wire Line
 	8600 950  8600 800 
+$Comp
+L Device:R R?
+U 1 1 6076C7CF
+P 4050 1200
+AR Path="/5FC823B8/6076C7CF" Ref="R?"  Part="1" 
+AR Path="/5FD29175/6076C7CF" Ref="R?"  Part="1" 
+AR Path="/60A03338/6076C7CF" Ref="R?"  Part="1" 
+F 0 "R?" V 4250 1200 50  0000 L CNN
+F 1 "10k" V 4150 1150 50  0000 L CNN
+F 2 "" V 3980 1200 50  0001 C CNN
+F 3 "~" H 4050 1200 50  0001 C CNN
+	1    4050 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6076C7D5
+P 3650 1350
+AR Path="/5FC823B8/6076C7D5" Ref="R?"  Part="1" 
+AR Path="/5FD29175/6076C7D5" Ref="R?"  Part="1" 
+AR Path="/60A03338/6076C7D5" Ref="R?"  Part="1" 
+F 0 "R?" H 3500 1300 50  0000 L CNN
+F 1 "10k" H 3450 1400 50  0000 L CNN
+F 2 "" V 3580 1350 50  0001 C CNN
+F 3 "~" H 3650 1350 50  0001 C CNN
+	1    3650 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1200 3650 1200
+Wire Wire Line
+	3300 1750 3500 1750
+Wire Wire Line
+	4200 1200 4800 1200
+Wire Wire Line
+	3650 1500 3650 1750
+Connection ~ 3650 1750
+Wire Wire Line
+	3650 1750 4400 1750
+Text Label 3650 1200 0    50   ~ 0
+DVDDH
+$Comp
+L Device:C C?
+U 1 1 6076C7E5
+P 3650 1900
+AR Path="/5FC823B8/6076C7E5" Ref="C?"  Part="1" 
+AR Path="/5FD29175/6076C7E5" Ref="C?"  Part="1" 
+AR Path="/60A03338/6076C7E5" Ref="C?"  Part="1" 
+F 0 "C?" H 3765 1946 50  0000 L CNN
+F 1 "10u" H 3765 1855 50  0000 L CNN
+F 2 "" H 3688 1750 50  0001 C CNN
+F 3 "~" H 3650 1900 50  0001 C CNN
+	1    3650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6076C7EB
+P 3650 2050
+AR Path="/5FC823B8/6076C7EB" Ref="#PWR?"  Part="1" 
+AR Path="/5FD29175/6076C7EB" Ref="#PWR?"  Part="1" 
+AR Path="/60A03338/6076C7EB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 1800 50  0001 C CNN
+F 1 "GND" H 3655 1877 50  0000 C CNN
+F 2 "" H 3650 2050 50  0001 C CNN
+F 3 "" H 3650 2050 50  0001 C CNN
+	1    3650 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 6076C7F1
+P 3500 1350
+F 0 "D?" V 3450 1150 50  0000 L CNN
+F 1 "1N4148W" V 3550 900 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 3500 1175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 3500 1350 50  0001 C CNN
+	1    3500 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 6076C7F7
+P 3150 1750
+F 0 "D?" H 3150 1967 50  0000 C CNN
+F 1 "1N4148W" H 3150 1876 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 3150 1750 50  0001 C CNN
+	1    3150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1500 3500 1750
+Connection ~ 3500 1750
+Wire Wire Line
+	3500 1750 3650 1750
+Wire Wire Line
+	3500 1200 3650 1200
+Connection ~ 3650 1200
 $EndSCHEMATC

@@ -1996,64 +1996,59 @@ Wire Wire Line
 	1450 7700 2150 7700
 Text Label 3000 5050 0    50   ~ 0
 EC1PHY_INT_N
-Text Label 4450 1600 0    50   ~ 0
+Text Label 3950 1150 0    50   ~ 0
 EC1PHY_INT_N
-Text HLabel 5050 1600 2    50   Output ~ 0
+Text HLabel 4500 1150 2    50   Output ~ 0
 EC1PHY_INT_N
 Text Label 3000 5350 0    50   ~ 0
 EC1PHY_RST_N
 $Comp
 L Device:R R?
 U 1 1 5FF1CC7D
-P 4050 1250
+P 3750 1150
 AR Path="/5FC823B8/5FF1CC7D" Ref="R?"  Part="1" 
 AR Path="/5FD29175/5FF1CC7D" Ref="R?"  Part="1" 
 AR Path="/60A03338/5FF1CC7D" Ref="R?"  Part="1" 
-F 0 "R?" H 3900 1200 50  0000 L CNN
-F 1 "10k" H 3850 1300 50  0000 L CNN
-F 2 "" V 3980 1250 50  0001 C CNN
-F 3 "~" H 4050 1250 50  0001 C CNN
-	1    4050 1250
-	-1   0    0    1   
+F 0 "R?" V 3950 1150 50  0000 L CNN
+F 1 "10k" V 3850 1100 50  0000 L CNN
+F 2 "" V 3680 1150 50  0001 C CNN
+F 3 "~" H 3750 1150 50  0001 C CNN
+	1    3750 1150
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FF1CC8B
-P 4300 1250
+P 3350 1300
 AR Path="/5FC823B8/5FF1CC8B" Ref="R?"  Part="1" 
 AR Path="/5FD29175/5FF1CC8B" Ref="R?"  Part="1" 
 AR Path="/60A03338/5FF1CC8B" Ref="R?"  Part="1" 
-F 0 "R?" H 4150 1200 50  0000 L CNN
-F 1 "10k" H 4100 1300 50  0000 L CNN
-F 2 "" V 4230 1250 50  0001 C CNN
-F 3 "~" H 4300 1250 50  0001 C CNN
-	1    4300 1250
+F 0 "R?" H 3200 1250 50  0000 L CNN
+F 1 "10k" H 3150 1350 50  0000 L CNN
+F 2 "" V 3280 1300 50  0001 C CNN
+F 3 "~" H 3350 1300 50  0001 C CNN
+	1    3350 1300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4300 1100 4050 1100
+	3600 1150 3350 1150
 Wire Wire Line
 	3000 5350 3600 5350
 Wire Wire Line
 	3000 5050 3600 5050
-Text Label 4450 1800 0    50   ~ 0
+Text Label 3500 1700 0    50   ~ 0
 EC1PHY_RST_N
-Text HLabel 5050 1800 2    50   Input ~ 0
+Text HLabel 2700 1700 0    50   Input ~ 0
 EC1PHY_RST_N
 Wire Wire Line
-	3950 1600 4050 1600
+	3000 1700 3200 1700
 Wire Wire Line
-	3950 1800 4300 1800
+	3900 1150 4500 1150
 Wire Wire Line
-	4050 1400 4050 1600
-Connection ~ 4050 1600
+	3350 1450 3350 1700
+Connection ~ 3350 1700
 Wire Wire Line
-	4050 1600 5050 1600
-Wire Wire Line
-	4300 1400 4300 1800
-Connection ~ 4300 1800
-Wire Wire Line
-	4300 1800 5050 1800
+	3350 1700 4100 1700
 Text Label 10600 2200 0    50   ~ 0
 AVDDL
 Text Label 10500 3000 0    50   ~ 0
@@ -2064,7 +2059,7 @@ Text Label 8500 2200 0    50   ~ 0
 AVDDH
 Text Label 8500 2950 0    50   ~ 0
 DVDDH
-Text Label 4050 1100 0    50   ~ 0
+Text Label 3350 1150 0    50   ~ 0
 DVDDH
 Text Label 4100 2300 1    50   ~ 0
 DVDDH
@@ -2226,4 +2221,62 @@ Text Label 2650 3150 0    50   ~ 0
 EC1_MDC
 Text Label 2650 3250 0    50   ~ 0
 EC1_MDIO
+$Comp
+L Device:C C?
+U 1 1 6052658F
+P 3350 1850
+AR Path="/5FC823B8/6052658F" Ref="C?"  Part="1" 
+AR Path="/5FD29175/6052658F" Ref="C?"  Part="1" 
+AR Path="/60A03338/6052658F" Ref="C?"  Part="1" 
+F 0 "C?" H 3465 1896 50  0000 L CNN
+F 1 "10u" H 3465 1805 50  0000 L CNN
+F 2 "" H 3388 1700 50  0001 C CNN
+F 3 "~" H 3350 1850 50  0001 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60536F5C
+P 3350 2000
+AR Path="/5FC823B8/60536F5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FD29175/60536F5C" Ref="#PWR?"  Part="1" 
+AR Path="/60A03338/60536F5C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3350 1750 50  0001 C CNN
+F 1 "GND" H 3355 1827 50  0000 C CNN
+F 2 "" H 3350 2000 50  0001 C CNN
+F 3 "" H 3350 2000 50  0001 C CNN
+	1    3350 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 6060D249
+P 3200 1300
+F 0 "D?" V 3150 1100 50  0000 L CNN
+F 1 "1N4148W" V 3250 850 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 3200 1125 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 60640C58
+P 2850 1700
+F 0 "D?" H 2850 1917 50  0000 C CNN
+F 1 "1N4148W" H 2850 1826 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 2850 1525 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 2850 1700 50  0001 C CNN
+	1    2850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1450 3200 1700
+Connection ~ 3200 1700
+Wire Wire Line
+	3200 1700 3350 1700
+Wire Wire Line
+	3200 1150 3350 1150
+Connection ~ 3350 1150
 $EndSCHEMATC
