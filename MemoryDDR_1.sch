@@ -2902,6 +2902,8 @@ F 3 "" H 1100 2200 50  0001 C CNN
 	1    1100 2200
 	1    0    0    -1  
 $EndComp
+Text Notes 6200 11050 0    50   ~ 0
+RAM Control pins are under VTT reference
 Wire Bus Line
 	7050 3150 7050 3450
 Wire Bus Line
